@@ -20,17 +20,80 @@ h1 {
     font-style: italic;
     color : #ff0000;
 }
+
+    .grille {
+        display: grid;
+         grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        margin-top: 40px;
+    }
+@media (max-width: 700px) {
+    .grille {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+    .carte {
+        display: block;
+        background-color: #1a1a1a;
+        color: #ffffff;
+        text-decoration: none;
+        padding: 20px;
+        border-radius: 12px;
+        text-align: center;
+        transition: transform 0.2s ease, background-color 0.2s ease;
+    }
+
+    .carte:hover {
+        background-color: #ff0000;
+        transform: translateY(-5px);
+    }
+
     </style>
    
 </head>
+
+
 <body>
     <h1>Agrégation interne d'espagnol</h1>
 
-    <ul>
-        <li><a href="https://drive.google.com/drive/folders/1ht7wS8lTyMjqxDk_5rmxKKjY0idtW9mm?usp=drive_link">Dossiers du Drive</a></li>
-        <li><a href="https://us06web.zoom.us/j/89735563378?pwd=m1ysh8NRrSEWE7VULRLb5HqiRXIqfV.1">Réunion Zoom en cours</a></li>
-        <li><a href="https://www.example.net">Site 3</a></li>
-    </ul>
+
+<div class="grille">
+
+ <a class="carte" href="liens divers.html">
+	Liens divers
+</a>
+
+<a class="carte" href="caraibe.html">
+       La Caraïbe <br>
+ Fernández de Oviedo (1492-1526)
+</a>
+
+
+<a class="carte" href="mistral.html">
+	Gabriela Mistral <br>
+ Tala (1938) et Lagar (1954)
+</a>
+
+
+<a class="carte" href="comedia">
+	Comedia de cape et d'épée <br>
+ Lope de Vega et Tirso de Molina
+</a>
+
+<a class="carte" href="franquismo">
+	Le franquisme <br>
+ Le déclin de la dictature (1962-1975)
+</a>
+   
+<a class="#" href="#">
+	 <br>
+ 
+</a>
+
+</div>
+   
 </body>
 </html>
 
